@@ -1,0 +1,99 @@
+.parent {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.child {
+    padding: 20px; /* Réduction du rembourrage */
+    width: 100%;
+    max-width: 500px; /* Réduction de la largeur maximale */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    border-radius: 5px;
+    height: auto; /* Hauteur automatique */
+    margin-top: 99px;
+}
+
+
+.imeDiv {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 70px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.login-form-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Style pour les catégories */
+.category {
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    padding: 15px; /* Réduction de l'espacement intérieur */
+    margin-bottom: 20px; /* Marge inférieure pour séparer les catégories */
+}
+
+/* Style pour les titres de catégorie */
+.category h4 {
+    margin-bottom: 8px; /* Réduction de la marge inférieure */
+}
+
+/* Style pour les entrées de formulaire */
+.category input,
+.category textarea {
+    border-radius: 4px; /* Coins arrondis */
+    border: 1px solid #ccc; /* Bordure légère */
+    padding: 8px; /* Réduction de l'espacement intérieur */
+    width: calc(100% - 18px); /* Largeur totale avec espace pour la bordure */
+    box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation de transition */
+}
+
+/* Style pour les boutons */
+.btn-post {
+    background-color: #297ad0; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    width: 100%; /* Largeur totale */
+    height: 40px; /* Hauteur */
+    padding: 8px; /* Réduction de l'espacement intérieur */
+    box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+/* Style pour les boutons au survol */
+.btn-post:hover {
+    background-color: #235f90; /* Couleur de fond au survol */
+}

@@ -1,0 +1,216 @@
+.container {
+   
+  /* Centre l'image horizontalement et verticalement */
+  height: 100vh; /* Définit la hauteur de la div pour couvrir la hauteur de la fenêtre */
+  display: flex; /* Utilise Flexbox pour centrer le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; 
+  position: relative;
+
+   margin-top: -300px;
+ 
+  /* Centre le contenu verticalement */
+ 
+}
+  
+  .title-container {
+    flex: 1; /* Fait en sorte que le conteneur du titre prenne tout l'espace restant */
+    margin-right: 20px; /* Marge à droite pour séparer le titre de l'image */
+  }
+  
+  .image {
+    width: 90%; /* Définir la largeur de l'image */
+    max-height: 80vh; /* Limiter la hauteur de l'image pour éviter le débordement */
+    margin-right: 50px; 
+    /* Marge à droite pour séparer l'image du titre */
+  }
+  
+  .image-container {
+    align-self: flex-end; /* Positionne l'image à droite de la page */
+  }
+  
+  .title {
+    font-size: 24px; /* Taille de la police du titre */
+    font-weight: bold; /* Mettre en gras le texte du titre */
+    margin-left: 20px; /* Marge à gauche pour séparer le titre de l'image */
+  }
+  /* Style pour le bouton Angular Material */
+a.mat-button {
+  color: white; /* Couleur du texte */
+  background-color: #1976d2; /* Couleur de fond */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border-radius: 5px; /* Bord arrondi */
+  text-decoration: none; /* Supprimer la soulignure du lien */
+  transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+/* Style pour le survol du bouton */
+a.mat-button:hover {
+  background-color: #1565c0; /* Couleur de fond au survol */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espace entre la barre de recherche et le tableau */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #0e93c0;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin-left: 550px;
+  margin-right: 100px;
+
+}
+
+.search-bar .input-group {
+  margin-right: 20px; 
+}
+
+.search-bar input[type="text"] {
+  width: 500px; /* Largeur des champs de recherche */
+  height: 40px; /* Hauteur des champs de recherche */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px; /* Espace intérieur */
+  border: 1px solid #181717; /* Bordure légère */
+}
+
+.search-bar button {
+  height: 40px; /* Hauteur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espace intérieur */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles pour les autres éléments restants */
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%; /* Assurez-vous que les champs de saisie prennent toute la largeur disponible */
+}
+
+
+
+
+.center-panel {
+  flex: 3; /* Plus large que les autres panneaux */
+
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 150px;
+
+  margin-top: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+  row-gap: 100px;
+}
+
+.category-card {
+  width: 290px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease;
+  }
+  
+  .category-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .post {
+    text-align: center; /* Centrer le texte horizontalement */
+    position: absolute; /* Position absolue pour placer le contenu "objectives" */
+    top: calc(50% + 100px); /* Positionner 100 pixels en dessous de la moitié de la hauteur de la fenêtre */
+    left: 50%; /* Centre le contenu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le contenu parfaitement */
+    z-index: 1.5;
+    margin-top: 250px;
+    /* Assurez-vous que le contenu objectives est affiché au-dessus du contenu précédent */
+  }
+  
+  .post h2 {
+    display: inline-block; /* Permet au titre de se comporter comme un bloc en ligne */
+    text-align: left; /* Alignement du texte à gauche */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px; /* Taille de la police */
+    border-bottom: 2px solid #333; /* Ajoute une barre horizontale de 2 pixels solide de couleur grise */
+    padding-bottom: 10px; 
+    font-family: cursive; 
+    white-space: nowrap; /* Force le titre à rester sur une seule ligne */
+    color: #333; 
+    /* Espace sous la barre horizontale */
+  }
+  .content-wrapper {
+    display: flex; /* Utiliser Flexbox pour aligner les cadres horizontalement */
+    justify-content: space-around; /* Espacement égal entre les cadres */
+    margin-top: 20px; 
+    margin-left: 100px;
+    margin-right: 100px;/* Marge en haut */
+  }
+  
+  .content-box {
+    width: 280px; 
+    height: 50%;/* Largeur de chaque cadre */
+    border: 1px solid #ccc; /* Bordure */
+    padding: 20px; /* Espacement intérieur */
+    margin: 0 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+  }
+  
+  .content-box h3 {
+    font-size: 18px; /* Taille du sous-titre */
+    margin-bottom: 10px;
+    color:#007bff /* Marge en bas */
+  }
+  .boutton {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .boutton button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boutton button:hover {
+    background-color: rgb(172, 172, 221);
+  }

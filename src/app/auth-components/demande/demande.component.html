@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="center-panel">
+    
+  
+  
+  </div>
+  </div>
+  
+  <div class="post">
+    <img    src="/assets/img/job.gif"   style="font-size: 2px;   width: 80px;  ">   
+  
+    <h2>Voulez-vous poster votre propre offre?</h2>
+     
+    <div class="content-wrapper">
+        <div class="content-box " style="background-color: rgb(242, 228, 255);" >
+            <h3> 1</h3>
+            <p>Enregistrez-vous sans frais dès maintenant! Créez un compte et affichez votre offre d'emploi.</p>
+        </div>
+        <div class="content-box" style="background-color: rgb(230, 245, 231);">
+            <h3> 2</h3>
+            <p>Créez votre annonce d'emploi ! Choisissez un titre accrocheur, rédigez une description détaillée..
+            </p>
+        </div>
+        <div class="content-box" style="background-color: rgb(252, 236, 226);">
+            <h3> 3</h3>
+            <p>Publiez votre offre d'emploi dès maintenant! Laissez les entreprises vous trouver</p>
+        </div>
+    </div>
+  
+    <div class="boutton">
+        <button nzType="link" routerLink="/login" routerLinkActive="active">Publier votre propre offre </button>
+    </div>
+  
+  
+  
+    <img    src="/assets/img/browser.gif"   style="font-size: 2px;   width: 60px;  ">   
+  
+  
+    <h2 style="margin-top: 150px;"> Offres</h2>
+
+  <div class="category-list">
+    <div class="category-card"
+     *ngFor="let category of categories">
+      <h3  style="font-family: 'Times New Roman', Times, serif; font-size: 30px;" >{{ category.name }}</h3>
+      <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">{{ category.description }}</p>
+      <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; "><a style="color: rgb(3, 3, 145); 
+      font-family: 'Times New Roman', Times, serif ;font-size: 20px;">Veuillez contactez moi si vous etes intéressés! <br></a>{{ category.email}}</p>
+
+      <!-- Autres détails de la catégorie ici -->
+    </div>
+  </div>
+  
